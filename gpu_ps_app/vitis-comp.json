@@ -1,0 +1,15 @@
+{
+  "name": "gpu_ps_app",
+  "type": "HOST",
+  "platform": "F:\\dokumenty\\fpga\\gpu\\platform_pynq\\export\\platform_pynq\\platform_pynq.xpfm",
+  "domain": "standalone_ps7_cortexa9_0",
+  "cpuInstance": "ps7_cortexa9_0",
+  "cpuType": "cortex-a9",
+  "os": "standalone",
+  "configuration": {
+    "componentType": "HOST",
+    "hostToolchainConfigurations": []
+  },
+  "domainRealName": "standalone_ps7_cortexa9_0",
+  "applicationFlow": "EMBEDDED"
+}

@@ -1,0 +1,64 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.srcs/sources_1/new/LEDController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDController
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.srcs/sources_1/new/Toggle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Toggle
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.srcs/sources_1/new/ClockDivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockDivider
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.srcs/sources_1/new/HDMI_CLK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HDMI_CLK
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.srcs/sources_1/new/TMDS_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TMDS_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.srcs/sources_1/new/HDMI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HDMI
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.gen/sources_1/ip/selectio_wiz_1/selectio_wiz_1_selectio_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectio_wiz_1_selectio_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.gen/sources_1/ip/selectio_wiz_1/selectio_wiz_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectio_wiz_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.srcs/sources_1/new/HDMI_OUT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HDMI_OUT
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.srcs/sources_1/new/OR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.ip_user_files/bd/MainDesign/ip/MainDesign_LEDController_0_0/sim/MainDesign_LEDController_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainDesign_LEDController_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.ip_user_files/bd/MainDesign/ip/MainDesign_Toggle_0_0/sim/MainDesign_Toggle_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainDesign_Toggle_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.ip_user_files/bd/MainDesign/ip/MainDesign_ClockDivider_0_0/sim/MainDesign_ClockDivider_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainDesign_ClockDivider_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.ip_user_files/bd/MainDesign/ip/MainDesign_HDMI_CLK_0_0/sim/MainDesign_HDMI_CLK_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainDesign_HDMI_CLK_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.ip_user_files/bd/MainDesign/ip/MainDesign_HDMI_0_0/sim/MainDesign_HDMI_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainDesign_HDMI_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.ip_user_files/bd/MainDesign/ip/MainDesign_HDMI_OUT_0_0/sim/MainDesign_HDMI_OUT_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainDesign_HDMI_OUT_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.ip_user_files/bd/MainDesign/ip/MainDesign_processing_system7_0_0/sim/MainDesign_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainDesign_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.ip_user_files/bd/MainDesign/ip/MainDesign_xbar_0/sim/MainDesign_xbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainDesign_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.ip_user_files/bd/MainDesign/ip/MainDesign_OR_GATE_0_0/sim/MainDesign_OR_GATE_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainDesign_OR_GATE_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.ip_user_files/bd/MainDesign/ip/MainDesign_auto_pc_0/sim/MainDesign_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainDesign_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.ip_user_files/bd/MainDesign/ip/MainDesign_auto_pc_1/sim/MainDesign_auto_pc_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainDesign_auto_pc_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.ip_user_files/bd/MainDesign/sim/MainDesign.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainDesign
+INFO: [VRFC 10-311] analyzing module MainDesign_axi_mem_intercon_0
+INFO: [VRFC 10-311] analyzing module MainDesign_ps7_0_axi_periph_0
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_R0WLO6
+INFO: [VRFC 10-311] analyzing module m01_couplers_imp_140T0W
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_1ABM281
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_VCY9J
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.gen/sources_1/bd/MainDesign/hdl/MainDesign_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainDesign_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/dokumenty/fpga/pynq_test/pynq_test.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/dokumenty/fpga/pynq_test/pynq_test.ip_user_files/bd/MainDesign/ip/MainDesign_axi_gpio_0_0/sim/MainDesign_axi_gpio_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MainDesign_axi_gpio_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/dokumenty/fpga/pynq_test/pynq_test.ip_user_files/bd/MainDesign/ip/MainDesign_axi_vdma_0_0/sim/MainDesign_axi_vdma_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MainDesign_axi_vdma_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/dokumenty/fpga/pynq_test/pynq_test.ip_user_files/bd/MainDesign/ip/MainDesign_rst_ps7_0_100M_0/sim/MainDesign_rst_ps7_0_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MainDesign_rst_ps7_0_100M_0'
