@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="MainDesign_axi_dma_0_1_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1725903703">
   <File Type="PA-TCL" Name="MainDesign_axi_dma_0_1.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="MainDesign_axi_dma_0_1_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="MainDesign_axi_dma_0_1_reports.tcl"/>
   <File Type="RDS-RDS" Name="MainDesign_axi_dma_0_1.vds"/>
   <File Type="RDS-UTIL" Name="MainDesign_axi_dma_0_1_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="MainDesign_axi_dma_0_1_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="MainDesign_axi_dma_0_1.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="MainDesign_axi_dma_0_1_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="MainDesign_axi_dma_0_1_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MainDesign_axi_dma_0_1" RelGenDir="$PGENDIR/MainDesign_axi_dma_0_1">
     <File Path="$PSRCDIR/sources_1/bd/MainDesign/ip/MainDesign_axi_dma_0_1/MainDesign_axi_dma_0_1.xci">
       <FileInfo>

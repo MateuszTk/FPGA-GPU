@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/dokumenty/fpga/pynq_test/pynq_test.runs/MainDesign_axis_tester_0_0_synth_1'
+HD_PWD='F:/dokumenty/fpga/gpu/gpu.runs/MainDesign_axis_tester_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -2,18 +2,18 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-// Date        : Wed Jul 31 19:42:36 2024
+// Date        : Sat Sep 14 18:56:50 2024
 // Host        : mati running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top MainDesign_xbar_3 -prefix
-//               MainDesign_xbar_3_ MainDesign_xbar_0_sim_netlist.v
-// Design      : MainDesign_xbar_0
+// Command     : write_verilog -force -mode funcsim
+//               f:/dokumenty/fpga/gpu/gpu.gen/sources_1/bd/MainDesign/ip/MainDesign_xbar_3/MainDesign_xbar_3_sim_netlist.v
+// Design      : MainDesign_xbar_3
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7z020clg400-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "MainDesign_xbar_0,axi_crossbar_v2_1_32_axi_crossbar,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_crossbar_v2_1_32_axi_crossbar,Vivado 2024.1" *) 
+(* CHECK_LICENSE_TYPE = "MainDesign_xbar_3,axi_crossbar_v2_1_32_axi_crossbar,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_crossbar_v2_1_32_axi_crossbar,Vivado 2024.1" *) 
 (* NotValidForBitStream *)
 module MainDesign_xbar_3
    (aclk,
@@ -306,6 +306,7 @@ module MainDesign_xbar_3
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "axi_crossbar_v2_1_32_addr_arbiter_sasd" *) 
 module MainDesign_xbar_3_axi_crossbar_v2_1_32_addr_arbiter_sasd
    (p_0_in1_in,
     m_valid_i,
@@ -1388,13 +1389,13 @@ endmodule
 (* C_NUM_MASTER_SLOTS = "2" *) (* C_NUM_SLAVE_SLOTS = "1" *) (* C_R_REGISTER = "1" *) 
 (* C_S_AXI_ARB_PRIORITY = "0" *) (* C_S_AXI_BASE_ID = "0" *) (* C_S_AXI_READ_ACCEPTANCE = "1" *) 
 (* C_S_AXI_SINGLE_THREAD = "1" *) (* C_S_AXI_THREAD_ID_WIDTH = "0" *) (* C_S_AXI_WRITE_ACCEPTANCE = "1" *) 
-(* DowngradeIPIdentifiedWarnings = "yes" *) (* P_ADDR_DECODE = "1" *) (* P_AXI3 = "1" *) 
-(* P_AXI4 = "0" *) (* P_AXILITE = "2" *) (* P_AXILITE_SIZE = "3'b010" *) 
-(* P_FAMILY = "zynq" *) (* P_INCR = "2'b01" *) (* P_LEN = "8" *) 
-(* P_LOCK = "1" *) (* P_M_AXI_ERR_MODE = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) (* P_M_AXI_SUPPORTS_READ = "2'b11" *) 
-(* P_M_AXI_SUPPORTS_WRITE = "2'b11" *) (* P_ONES = "65'b11111111111111111111111111111111111111111111111111111111111111111" *) (* P_RANGE_CHECK = "1" *) 
-(* P_S_AXI_BASE_ID = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) (* P_S_AXI_HIGH_ID = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) (* P_S_AXI_SUPPORTS_READ = "1'b1" *) 
-(* P_S_AXI_SUPPORTS_WRITE = "1'b1" *) 
+(* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "axi_crossbar_v2_1_32_axi_crossbar" *) (* P_ADDR_DECODE = "1" *) 
+(* P_AXI3 = "1" *) (* P_AXI4 = "0" *) (* P_AXILITE = "2" *) 
+(* P_AXILITE_SIZE = "3'b010" *) (* P_FAMILY = "zynq" *) (* P_INCR = "2'b01" *) 
+(* P_LEN = "8" *) (* P_LOCK = "1" *) (* P_M_AXI_ERR_MODE = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) 
+(* P_M_AXI_SUPPORTS_READ = "2'b11" *) (* P_M_AXI_SUPPORTS_WRITE = "2'b11" *) (* P_ONES = "65'b11111111111111111111111111111111111111111111111111111111111111111" *) 
+(* P_RANGE_CHECK = "1" *) (* P_S_AXI_BASE_ID = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) (* P_S_AXI_HIGH_ID = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) 
+(* P_S_AXI_SUPPORTS_READ = "1'b1" *) (* P_S_AXI_SUPPORTS_WRITE = "1'b1" *) 
 module MainDesign_xbar_3_axi_crossbar_v2_1_32_axi_crossbar
    (aclk,
     aresetn,
@@ -1792,6 +1793,7 @@ module MainDesign_xbar_3_axi_crossbar_v2_1_32_axi_crossbar
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "axi_crossbar_v2_1_32_crossbar_sasd" *) 
 module MainDesign_xbar_3_axi_crossbar_v2_1_32_crossbar_sasd
    (m_axi_awvalid,
     Q,
@@ -2100,6 +2102,7 @@ module MainDesign_xbar_3_axi_crossbar_v2_1_32_crossbar_sasd
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "axi_crossbar_v2_1_32_decerr_slave" *) 
 module MainDesign_xbar_3_axi_crossbar_v2_1_32_decerr_slave
    (mi_bvalid,
     m_axi_rvalid_0_sp_1,
@@ -2302,6 +2305,7 @@ module MainDesign_xbar_3_axi_crossbar_v2_1_32_decerr_slave
         .O(m_axi_wready_1_sn_1));
 endmodule
 
+(* ORIG_REF_NAME = "axi_crossbar_v2_1_32_splitter" *) 
 module MainDesign_xbar_3_axi_crossbar_v2_1_32_splitter
    (s_axi_awready_i,
     m_ready_d,
@@ -2465,6 +2469,7 @@ module MainDesign_xbar_3_axi_crossbar_v2_1_32_splitter__parameterized0
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "axi_register_slice_v2_1_31_axic_register_slice" *) 
 module MainDesign_xbar_3_axi_register_slice_v2_1_31_axic_register_slice
    (sr_rvalid,
     aa_rready,

@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
--- Date        : Tue Sep 10 18:56:01 2024
+-- Date        : Thu Sep 26 16:31:22 2024
 -- Host        : mati running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               f:/dokumenty/fpga/pynq_test/pynq_test.gen/sources_1/bd/MainDesign/ip/MainDesign_axis_tester_0_0/MainDesign_axis_tester_0_0_stub.vhdl
+--               f:/dokumenty/fpga/gpu/gpu.gen/sources_1/bd/MainDesign/ip/MainDesign_axis_tester_0_0/MainDesign_axis_tester_0_0_stub.vhdl
 -- Design      : MainDesign_axis_tester_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Sep 14 18:55:45 2024
+# Process ID: 9580
+# Current directory: F:/dokumenty/fpga/gpu/gpu.runs/MainDesign_xbar_6_synth_1
+# Command line: vivado.exe -log MainDesign_xbar_6.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MainDesign_xbar_6.tcl
+# Log file: F:/dokumenty/fpga/gpu/gpu.runs/MainDesign_xbar_6_synth_1/MainDesign_xbar_6.vds
+# Journal file: F:/dokumenty/fpga/gpu/gpu.runs/MainDesign_xbar_6_synth_1\vivado.jou
+# Running On        :mati
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz
+# CPU Frequency     :3696 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :34299 MB
+# Swap memory       :8769 MB
+# Total Virtual     :43069 MB
+# Available Virtual :22006 MB
+#-----------------------------------------------------------
+source MainDesign_xbar_6.tcl -notrace

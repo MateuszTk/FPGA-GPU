@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-//Date        : Tue Sep 10 18:55:02 2024
+//Date        : Thu Sep 26 16:30:07 2024
 //Host        : mati running 64-bit major release  (build 9200)
 //Command     : generate_target MainDesign.bd
 //Design      : MainDesign
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "MainDesign,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MainDesign,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=34,numReposBlks=22,numNonXlnxBlks=0,numHierBlks=12,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=8,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=26,da_board_cnt=4,da_clkrst_cnt=1,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MainDesign.hwdef" *) 
+(* CORE_GENERATION_INFO = "MainDesign,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=MainDesign,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=34,numReposBlks=22,numNonXlnxBlks=0,numHierBlks=12,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=8,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=30,da_board_cnt=4,da_clkrst_cnt=1,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "MainDesign.hwdef" *) 
 module MainDesign
    (BTN,
     CLK_IN,
@@ -500,9 +500,9 @@ module MainDesign
         .S00_AXI_rready(axi_vdma_0_M_AXI_MM2S_RREADY),
         .S00_AXI_rresp(axi_vdma_0_M_AXI_MM2S_RRESP),
         .S00_AXI_rvalid(axi_vdma_0_M_AXI_MM2S_RVALID));
-  MainDesign_axi_mem_intercon_1_1 axi_mem_intercon_1
+  MainDesign_axi_mem_intercon_1_3 axi_mem_intercon_1
        (.ACLK(processing_system7_0_FCLK_CLK0),
-        .ARESETN(ARESETN_1),
+        .ARESETN(rst_ps7_0_100M_1_peripheral_aresetn),
         .M00_ACLK(processing_system7_0_FCLK_CLK0),
         .M00_ARESETN(rst_ps7_0_100M_1_peripheral_aresetn),
         .M00_AXI_araddr(axi_mem_intercon_1_M00_AXI_ARADDR),
@@ -966,7 +966,7 @@ module MainDesign
         .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
 endmodule
 
-module MainDesign_axi_mem_intercon_1_1
+module MainDesign_axi_mem_intercon_1_3
    (ACLK,
     ARESETN,
     M00_ACLK,
@@ -1118,12 +1118,6 @@ module MainDesign_axi_mem_intercon_1_1
   input [3:0]S01_AXI_wstrb;
   input S01_AXI_wvalid;
 
-  wire M00_ACLK_1;
-  wire M00_ARESETN_1;
-  wire S00_ACLK_1;
-  wire S00_ARESETN_1;
-  wire S01_ACLK_1;
-  wire S01_ARESETN_1;
   wire axi_mem_intercon_1_ACLK_net;
   wire axi_mem_intercon_1_ARESETN_net;
   wire [31:0]axi_mem_intercon_1_to_s00_couplers_ARADDR;
@@ -1270,8 +1264,6 @@ module MainDesign_axi_mem_intercon_1_1
   wire [1:0]NLW_xbar_s_axi_bvalid_UNCONNECTED;
   wire [1:0]NLW_xbar_s_axi_wready_UNCONNECTED;
 
-  assign M00_ACLK_1 = M00_ACLK;
-  assign M00_ARESETN_1 = M00_ARESETN;
   assign M00_AXI_araddr[31:0] = m00_couplers_to_axi_mem_intercon_1_ARADDR;
   assign M00_AXI_arburst[1:0] = m00_couplers_to_axi_mem_intercon_1_ARBURST;
   assign M00_AXI_arcache[3:0] = m00_couplers_to_axi_mem_intercon_1_ARCACHE;
@@ -1299,15 +1291,11 @@ module MainDesign_axi_mem_intercon_1_1
   assign M00_AXI_wlast = m00_couplers_to_axi_mem_intercon_1_WLAST;
   assign M00_AXI_wstrb[7:0] = m00_couplers_to_axi_mem_intercon_1_WSTRB;
   assign M00_AXI_wvalid = m00_couplers_to_axi_mem_intercon_1_WVALID;
-  assign S00_ACLK_1 = S00_ACLK;
-  assign S00_ARESETN_1 = S00_ARESETN;
   assign S00_AXI_arready = axi_mem_intercon_1_to_s00_couplers_ARREADY;
   assign S00_AXI_rdata[31:0] = axi_mem_intercon_1_to_s00_couplers_RDATA;
   assign S00_AXI_rlast = axi_mem_intercon_1_to_s00_couplers_RLAST;
   assign S00_AXI_rresp[1:0] = axi_mem_intercon_1_to_s00_couplers_RRESP;
   assign S00_AXI_rvalid = axi_mem_intercon_1_to_s00_couplers_RVALID;
-  assign S01_ACLK_1 = S01_ACLK;
-  assign S01_ARESETN_1 = S01_ARESETN;
   assign S01_AXI_awready = axi_mem_intercon_1_to_s01_couplers_AWREADY;
   assign S01_AXI_bresp[1:0] = axi_mem_intercon_1_to_s01_couplers_BRESP;
   assign S01_AXI_bvalid = axi_mem_intercon_1_to_s01_couplers_BVALID;
@@ -1346,8 +1334,8 @@ module MainDesign_axi_mem_intercon_1_1
   assign m00_couplers_to_axi_mem_intercon_1_RVALID = M00_AXI_rvalid;
   assign m00_couplers_to_axi_mem_intercon_1_WREADY = M00_AXI_wready;
   m00_couplers_imp_1M37M6Q m00_couplers
-       (.M_ACLK(M00_ACLK_1),
-        .M_ARESETN(M00_ARESETN_1),
+       (.M_ACLK(axi_mem_intercon_1_ACLK_net),
+        .M_ARESETN(axi_mem_intercon_1_ARESETN_net),
         .M_AXI_araddr(m00_couplers_to_axi_mem_intercon_1_ARADDR),
         .M_AXI_arburst(m00_couplers_to_axi_mem_intercon_1_ARBURST),
         .M_AXI_arcache(m00_couplers_to_axi_mem_intercon_1_ARCACHE),
@@ -1445,8 +1433,8 @@ module MainDesign_axi_mem_intercon_1_1
         .M_AXI_rready(s00_couplers_to_xbar_RREADY),
         .M_AXI_rresp(s00_couplers_to_xbar_RRESP),
         .M_AXI_rvalid(s00_couplers_to_xbar_RVALID),
-        .S_ACLK(S00_ACLK_1),
-        .S_ARESETN(S00_ARESETN_1),
+        .S_ACLK(axi_mem_intercon_1_ACLK_net),
+        .S_ARESETN(axi_mem_intercon_1_ARESETN_net),
         .S_AXI_araddr(axi_mem_intercon_1_to_s00_couplers_ARADDR),
         .S_AXI_arburst(axi_mem_intercon_1_to_s00_couplers_ARBURST),
         .S_AXI_arcache(axi_mem_intercon_1_to_s00_couplers_ARCACHE),
@@ -1481,8 +1469,8 @@ module MainDesign_axi_mem_intercon_1_1
         .M_AXI_wready(s01_couplers_to_xbar_WREADY),
         .M_AXI_wstrb(s01_couplers_to_xbar_WSTRB),
         .M_AXI_wvalid(s01_couplers_to_xbar_WVALID),
-        .S_ACLK(S01_ACLK_1),
-        .S_ARESETN(S01_ARESETN_1),
+        .S_ACLK(axi_mem_intercon_1_ACLK_net),
+        .S_ARESETN(axi_mem_intercon_1_ARESETN_net),
         .S_AXI_awaddr(axi_mem_intercon_1_to_s01_couplers_AWADDR),
         .S_AXI_awburst(axi_mem_intercon_1_to_s01_couplers_AWBURST),
         .S_AXI_awcache(axi_mem_intercon_1_to_s01_couplers_AWCACHE),
@@ -1499,7 +1487,7 @@ module MainDesign_axi_mem_intercon_1_1
         .S_AXI_wready(axi_mem_intercon_1_to_s01_couplers_WREADY),
         .S_AXI_wstrb(axi_mem_intercon_1_to_s01_couplers_WSTRB),
         .S_AXI_wvalid(axi_mem_intercon_1_to_s01_couplers_WVALID));
-  MainDesign_xbar_5 xbar
+  MainDesign_xbar_6 xbar
        (.aclk(axi_mem_intercon_1_ACLK_net),
         .aresetn(axi_mem_intercon_1_ARESETN_net),
         .m_axi_araddr(xbar_to_m00_couplers_ARADDR),

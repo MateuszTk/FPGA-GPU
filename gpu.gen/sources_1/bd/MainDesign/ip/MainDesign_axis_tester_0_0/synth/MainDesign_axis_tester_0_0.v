@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "axis_tester,Vivado 2024.1" *)
 (* CHECK_LICENSE_TYPE = "MainDesign_axis_tester_0_0,axis_tester,{}" *)
-(* CORE_GENERATION_INFO = "MainDesign_axis_tester_0_0,axis_tester,{x_ipProduct=Vivado 2024.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=axis_tester,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,DATA_WIDTH=32}" *)
+(* CORE_GENERATION_INFO = "MainDesign_axis_tester_0_0,axis_tester,{x_ipProduct=Vivado 2024.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=axis_tester,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module MainDesign_axis_tester_0_0 (
@@ -91,9 +91,7 @@ output wire m_tlast;
 input wire m_axis_ready;
 output wire m_axis_valid;
 
-  axis_tester #(
-    .DATA_WIDTH(32)
-  ) inst (
+  axis_tester inst (
     .axi_clk(axi_clk),
     .axi_reset_n(axi_reset_n),
     .s_axis_data(s_axis_data),

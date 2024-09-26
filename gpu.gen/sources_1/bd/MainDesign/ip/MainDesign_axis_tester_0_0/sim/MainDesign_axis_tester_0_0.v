@@ -90,9 +90,7 @@ output wire m_tlast;
 input wire m_axis_ready;
 output wire m_axis_valid;
 
-  axis_tester #(
-    .DATA_WIDTH(32)
-  ) inst (
+  axis_tester inst (
     .axi_clk(axi_clk),
     .axi_reset_n(axi_reset_n),
     .s_axis_data(s_axis_data),

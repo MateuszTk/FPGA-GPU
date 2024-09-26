@@ -2,11 +2,11 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-// Date        : Wed Jul 31 19:42:36 2024
+// Date        : Sat Sep 14 18:56:50 2024
 // Host        : mati running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub -rename_top MainDesign_xbar_3 -prefix
-//               MainDesign_xbar_3_ MainDesign_xbar_0_stub.v
-// Design      : MainDesign_xbar_0
+// Command     : write_verilog -force -mode synth_stub
+//               f:/dokumenty/fpga/gpu/gpu.gen/sources_1/bd/MainDesign/ip/MainDesign_xbar_3/MainDesign_xbar_3_stub.v
+// Design      : MainDesign_xbar_3
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
 // --------------------------------------------------------------------------------

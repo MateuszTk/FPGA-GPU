@@ -1,4 +1,4 @@
-verilog xil_defaultlib --include "F:/programy/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../pynq_test.gen/sources_1/bd/MainDesign/ipshared/ec67/hdl" --include "../../../../pynq_test.gen/sources_1/bd/MainDesign/ipshared/b28c/hdl" --include "../../../../pynq_test.gen/sources_1/bd/MainDesign/ipshared/a4a8/hdl" \
+verilog xil_defaultlib --include "F:/programy/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../gpu.gen/sources_1/bd/MainDesign/ipshared/ec67/hdl" --include "../../../../gpu.gen/sources_1/bd/MainDesign/ipshared/b28c/hdl" --include "../../../../gpu.gen/sources_1/bd/MainDesign/ipshared/a4a8/hdl" \
 "../../../bd/MainDesign/ip/MainDesign_LEDController_0_0/sim/MainDesign_LEDController_0_0.v" \
 "../../../bd/MainDesign/ip/MainDesign_Toggle_0_0/sim/MainDesign_Toggle_0_0.v" \
 "../../../bd/MainDesign/ip/MainDesign_ClockDivider_0_0/sim/MainDesign_ClockDivider_0_0.v" \
@@ -8,8 +8,8 @@ verilog xil_defaultlib --include "F:/programy/Xilinx/Vivado/2024.1/data/xilinx_v
 "../../../bd/MainDesign/ip/MainDesign_processing_system7_0_0/sim/MainDesign_processing_system7_0_0.v" \
 "../../../bd/MainDesign/ip/MainDesign_OR_GATE_0_0/sim/MainDesign_OR_GATE_0_0.v" \
 "../../../bd/MainDesign/ip/MainDesign_xbar_3/sim/MainDesign_xbar_3.v" \
-"../../../bd/MainDesign/ip/MainDesign_xbar_5/sim/MainDesign_xbar_5.v" \
 "../../../bd/MainDesign/ip/MainDesign_axis_tester_0_0/sim/MainDesign_axis_tester_0_0.v" \
+"../../../bd/MainDesign/ip/MainDesign_xbar_6/sim/MainDesign_xbar_6.v" \
 "../../../bd/MainDesign/ip/MainDesign_auto_pc_0/sim/MainDesign_auto_pc_0.v" \
 "../../../bd/MainDesign/ip/MainDesign_auto_pc_1/sim/MainDesign_auto_pc_1.v" \
 "../../../bd/MainDesign/ip/MainDesign_auto_pc_2/sim/MainDesign_auto_pc_2.v" \

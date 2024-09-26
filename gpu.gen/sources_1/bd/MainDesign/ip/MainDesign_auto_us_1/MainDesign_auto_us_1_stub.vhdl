@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
--- Date        : Mon Sep  9 19:43:36 2024
+-- Date        : Sat Sep 14 18:28:53 2024
 -- Host        : mati running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top MainDesign_auto_us_1 -prefix
 --               MainDesign_auto_us_1_ MainDesign_auto_us_1_stub.vhdl

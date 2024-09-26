@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date             : Tue Sep 10 18:59:58 2024
+| Date             : Thu Sep 26 14:30:53 2024
 | Host             : mati running 64-bit major release  (build 9200)
 | Command          : report_power -file MainDesign_wrapper_power_routed.rpt -pb MainDesign_wrapper_power_summary_routed.pb -rpx MainDesign_wrapper_power_routed.rpx
 | Design           : MainDesign_wrapper
@@ -52,16 +52,16 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.022 |        8 |       --- |             --- |
-| Slice Logic              |     0.003 |    13599 |       --- |             --- |
-|   LUT as Logic           |     0.003 |     4446 |     53200 |            8.36 |
+| Clocks                   |     0.021 |        8 |       --- |             --- |
+| Slice Logic              |     0.004 |    13670 |       --- |             --- |
+|   LUT as Logic           |     0.003 |     4472 |     53200 |            8.41 |
 |   CARRY4                 |    <0.001 |      166 |     13300 |            1.25 |
-|   Register               |    <0.001 |     6599 |    106400 |            6.20 |
+|   Register               |    <0.001 |     6628 |    106400 |            6.23 |
 |   LUT as Shift Register  |    <0.001 |      340 |     17400 |            1.95 |
 |   F7/F8 Muxes            |    <0.001 |        5 |     53200 |           <0.01 |
 |   Others                 |     0.000 |      658 |       --- |             --- |
 |   LUT as Distributed RAM |     0.000 |       20 |     17400 |            0.11 |
-| Signals                  |     0.005 |    10043 |       --- |             --- |
+| Signals                  |     0.005 |    10078 |       --- |             --- |
 | Block RAM                |    <0.001 |      4.5 |       140 |            3.21 |
 | MMCM                     |     0.106 |        1 |         4 |           25.00 |
 | I/O                      |     0.136 |       16 |       125 |           12.80 |
@@ -170,8 +170,8 @@ Table of Contents
 |     axi_mem_intercon_1   |     0.005 |
 |       m00_couplers       |     0.002 |
 |       xbar               |     0.001 |
-|     axi_vdma_0           |     0.002 |
-|       U0                 |     0.002 |
+|     axi_vdma_0           |     0.003 |
+|       U0                 |     0.003 |
 |     processing_system7_0 |     1.258 |
 |       inst               |     1.258 |
 |     ps7_0_axi_periph     |     0.001 |

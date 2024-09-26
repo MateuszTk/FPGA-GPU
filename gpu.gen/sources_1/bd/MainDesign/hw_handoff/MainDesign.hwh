@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Sep 10 18:55:04 2024" VIVADOVERSION="2024.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Sep 26 16:30:09 2024" VIVADOVERSION="2024.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="tul.com.tw:pynq-z2:part0:1.0" DEVICE="7z020" NAME="MainDesign" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -2696,7 +2696,7 @@
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_interconnect;v=v2_1;d=pg059-axi-interconnect.pdf"/>
       </DOCUMENTS>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="MainDesign_axi_mem_intercon_1_1"/>
+        <PARAMETER NAME="Component_Name" VALUE="MainDesign_axi_mem_intercon_1_3"/>
         <PARAMETER NAME="ENABLE_ADVANCED_OPTIONS" VALUE="0"/>
         <PARAMETER NAME="ENABLE_PROTOCOL_CHECKERS" VALUE="0"/>
         <PARAMETER NAME="M00_HAS_DATA_FIFO" VALUE="0"/>
@@ -3019,9 +3019,9 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_100M_1_interconnect_aresetn">
+        <PORT DIR="I" NAME="ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_100M_1_peripheral_aresetn">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_ps7_0_100M_1" PORT="interconnect_aresetn"/>
+            <CONNECTION INSTANCE="rst_ps7_0_100M_1" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="M00_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
@@ -5423,7 +5423,6 @@
     <MODULE COREREVISION="1" FULLNAME="/axis_tester_0" HWVERSION="1.0" INSTANCE="axis_tester_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axis_tester" VLNV="xilinx.com:module_ref:axis_tester:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="Component_Name" VALUE="MainDesign_axis_tester_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
@@ -6578,12 +6577,12 @@
             <CONNECTION INSTANCE="axi_dma_0" PORT="s_axi_lite_aclk"/>
             <CONNECTION INSTANCE="axi_dma_0" PORT="m_axi_mm2s_aclk"/>
             <CONNECTION INSTANCE="axi_dma_0" PORT="m_axi_s2mm_aclk"/>
-            <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="S01_ACLK"/>
-            <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="M00_ACLK"/>
-            <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="S00_ACLK"/>
-            <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="ACLK"/>
             <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP1_ACLK"/>
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP1_ACLK"/>
+            <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="ACLK"/>
+            <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="S00_ACLK"/>
+            <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="M00_ACLK"/>
+            <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="S01_ACLK"/>
             <CONNECTION INSTANCE="axis_tester_0" PORT="axi_clk"/>
           </CONNECTIONS>
         </PORT>
@@ -9230,7 +9229,6 @@
         <PORT DIR="O" LEFT="0" NAME="interconnect_aresetn" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="rst" SIGNAME="rst_ps7_0_100M_1_interconnect_aresetn">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph_1" PORT="ARESETN"/>
-            <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="ARESETN"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="mb_debug_sys_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
@@ -9240,8 +9238,9 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph_1" PORT="S00_ARESETN"/>
             <CONNECTION INSTANCE="axi_dma_0" PORT="axi_resetn"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph_1" PORT="M00_ARESETN"/>
-            <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="M00_ARESETN"/>
             <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="S00_ARESETN"/>
+            <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="M00_ARESETN"/>
+            <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="ARESETN"/>
             <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="S01_ARESETN"/>
             <CONNECTION INSTANCE="axis_tester_0" PORT="axi_reset_n"/>
           </CONNECTIONS>
